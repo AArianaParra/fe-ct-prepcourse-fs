@@ -21,7 +21,7 @@ function mayoriaDeEdad(edad) {
    // Si tiene 18 años ó más debe retornar el string: "Allowed".
    // Caso contrario: "Not allowed".
    // Tu código:
-   if ((edad > 18 ) || ( edad ==18)) {
+   if (edad >= 18) {
       return ("Allowed");
    }
    else {
@@ -39,12 +39,15 @@ function conection(status) {
    switch (status) {
       case 1:
          return ("Online");
+         break;
 
       case 2 :
          return ("Away");
+         break;
       
       default :
          return ("Offline");
+         break;
       }
 }
 
